@@ -1,0 +1,30 @@
+<div class="Container">
+  <h3 class="mx-auto">Personas</h3>
+  <table class="table table-light table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Sexo</th>
+          <th scope="col">Documento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of Personas">
+            <th scope="row">{{item[0]}}</th>
+            <th>{{item[1]}}</th>
+            <th>{{item[2]}}</th>
+            <th>{{item[3]}}</th>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <label for="Nombre">Nombre</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Ej. John Smith" (keyup.enter)='agregarPersona(TextNombre.value)' #TextNombre>
+      <button class="btn btn-info" (click)="agregarPersona(TextNombre.value)"><i class="bi bi-plus-circle-fill">Subir documento</i></button>
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-info" (click)="guardar()">Guardar</button>
+    </div>
+</div>
