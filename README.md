@@ -1,3 +1,6 @@
+#Personas
+###Programador full-stack angular
+Proyecto de evidencia para puesto de programador full stack angular
 # GerardoAcuna
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
